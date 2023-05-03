@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap'
 import './Create.css'
 import CRALogo from '../Assets/CodewarsLOGO.png'
-import PersonIcon from '@mui/icons-material/Person';
+import { Person } from '@mui/icons-material'
 
 export default function CreateAccountComponent() {
   const [username, setUsername] = useState('');
@@ -37,10 +37,10 @@ export default function CreateAccountComponent() {
     <div className='form-controller'>
       <Container>
         <Row className='father-bg'>
-          <img src={CRALogo} alt="" />
-          <h1>CodeReserve</h1>
           <Col className='parent-bg'>
             <Form className='mother-class'>
+          <img src={CRALogo} alt="" />
+          <h1>CodeReserve</h1>
               <Form.Group controlId="formBasicEmail">
                 <Form.Control
                   className="input top"
@@ -67,6 +67,7 @@ export default function CreateAccountComponent() {
                   onChange={({target: {value}}) => setConfirmPassword(value)}
                 />
               </Form.Group>
+              {/* < Person /> */}
 
               <Form.Group className="checkbox" controlId="formBasicCheckbox">
                 <Form.Check inline type="checkbox" label="Admin Account" />
