@@ -1,0 +1,20 @@
+.navText{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.navRow.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91px;
+}
+
+.navDiv{
+    width: 82%;
+}

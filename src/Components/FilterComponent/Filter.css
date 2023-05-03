@@ -1,0 +1,90 @@
+.filterDiv{
+    box-sizing: border-box;
+
+    width: 34.4%;
+    height: 509px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+}
+
+.colFilter.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filterTxtDiv{
+    width: 86%;
+    display: flex;
+    margin-top: 39px;
+}
+
+.filterTxt{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.search{
+    width: 86%;
+    height: 43px;
+
+    box-sizing: border-box;
+    background: #222327;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.searchRow.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.magnify{
+    width: 17.5px;
+    height: 17.5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-image: url(../../Assets/Magnify.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-left: 19%;
+}
+
+.sortTxt{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.dropDownRow.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDown.dropdown{
+    padding: 0;
+    margin: 0;
+    width: 86%;
+}
+
+.dropDownBtn{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
