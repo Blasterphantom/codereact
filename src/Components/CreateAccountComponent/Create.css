@@ -1,3 +1,68 @@
 .form-controller {
     margin: 0 12vw;
 }
+
+html, body {
+    background: #16171B;
+}
+.parent-bg {
+    background: #222327;
+    color: white;
+    border-radius: 10px;
+}
+.father-bg {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    justify-content: center;
+    display: flex;
+}
+.father-bg img {
+    width: 35%;
+    margin-bottom: -5%;
+}
+.father-bg h1 {
+    color: white;
+}
+.input {
+    background: #222327;
+    border-radius: 0px;
+    border: 1px solid #757575;
+    margin-bottom: 0 !important;
+}
+.input:focus {
+    background: #222327;
+    /* border: 1px solid black; */
+    outline: none !important;
+}
+.top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.checkbox {
+    display: flex;
+    margin-top: 10px;
+}
+.mother-class {
+    padding: 10%;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+}
+.SignUp {
+    background: #BB432C;
+    border: 0px transparent;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.link {
+    color: white;
+}
+.mother-class p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

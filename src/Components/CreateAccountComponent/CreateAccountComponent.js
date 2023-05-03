@@ -7,57 +7,85 @@ import {
   Row
 } from 'react-bootstrap'
 import './Create.css'
+import CRALogo from '../Assets/CodewarsLOGO.png'
+import PersonIcon from '@mui/icons-material/Person';
+
 export default function CreateAccountComponent() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const [Username, setUsername] = useState('');
-  const [Password, setPassword] = useState('');
-
-  const handleSubmit = () => {
-    let userData = {
-      Username : Username,
-      Password : Password
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    if (password !== confirmPassword) {
+      alert("Your passwords do not match!");
+      return;
     }
-    console.log(userData)
-  }
+  
+    let userData = {
+      username: username,
+      password: password,
+      confirmPassword: confirmPassword
+    };
+    
+    console.log(userData);
+  };
+  
+
   return (
     <div className='form-controller'>
-      < Container >
-      <Row>
-        <h1>Create an Account!</h1>
-        <Col style={{backgroundColor: 'grey'}}>
+      <Container>
+        <Row className='father-bg'>
+          <img src={CRALogo} alt="" />
+          <h1>CodeReserve</h1>
+          <Col className='parent-bg'>
+            <Form className='mother-class'>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Control
+                  className="input top"
+                  type="text"
+                  placeholder="Codewars Login"
+                  onChange={({target: {value}}) => setUsername(value)}
+                />
+              </Form.Group>
 
-      <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Username</Form.Label>
-        <Form.Control 
-        type="text" 
-        placeholder="Enter username" 
-        onChange={({target : {value}}) => setUsername(value)}/>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Control
+                  className="input"
+                  type="password"
+                  placeholder="Password"
+                  onChange={({target: {value}}) => setPassword(value)}
+                />
+              </Form.Group>
 
-      </Form.Group>
+              <Form.Group controlId="formBasicPasswordConfirm">
+                <Form.Control
+                  className="input bottom"
+                  type="password"
+                  placeholder="Confirm Password"
+                  onChange={({target: {value}}) => setConfirmPassword(value)}
+                />
+              </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control 
-        type="password"
-        placeholder="Password"
-        onChange={({target : {value}}) => setPassword(value)}/>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button 
-      variant="primary" 
-      // type="submit"
-      onClick={handleSubmit}
-      >
-        Submit
-      </Button>
-    </Form>
+              <Form.Group className="checkbox" controlId="formBasicCheckbox">
+                <Form.Check inline type="checkbox" label="Admin Account" />
+              </Form.Group>
 
-        </Col>
-      </Row>
+              <Button
+                className='SignUp'
+                // variant="primary"
+                // type="submit"
+                onClick={handleSubmit}
+              >
+                Sign Up
+              </Button>
+              <p><a className='link' href="/Login">Log in</a> if you already have an account.</p>
+            </Form>
+          </Col>
+        </Row>
       </Container>
     </div>
   )
 }
+
