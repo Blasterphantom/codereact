@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 .form-controller {
     margin: 0 12vw;
 }
 
 html, body {
     background: #16171B;
-    font-family: 'Lato', sans-serif;
 }
 .parent-bg {
     background: #222327;
@@ -29,18 +26,8 @@ html, body {
 .input {
     background: #222327;
     border-radius: 0px;
-    border: transparent;
+    border: 1px solid #757575;
     margin-bottom: 0 !important;
-    padding-left: 5%;
-    width: 100%;
-    color: white;
-}
-
-.input:focus {
-    background: #222327;
-    /* border: 1px solid black; */
-    outline: none !important;
-    color: white;
 }
 .top {
     border-top-left-radius: 10px;
@@ -67,23 +54,10 @@ html, body {
     margin-top: 10px;
 
 }
-.SignUp:hover {
-    background: #9a331e;
-}
 .link {
     color: white;
 }
 .mother-class p {
     margin-top: 10px;
     margin-bottom: 0px;
-}
-svg {
-    margin-left: 10px;
-    display: flex;
-}
-.center-me {
-    align-items: center;
-    display: flex;
-    border: 1px solid #757575;
-
 }
