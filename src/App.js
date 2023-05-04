@@ -4,13 +4,24 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import HomeComponent from './Components/HomeComponent/HomeComponent.js';
 import LoginComponent from './Components/LoginComponent/LoginComponent.js'
 import CreateAccountComponent from './Components/CreateAccountComponent/CreateAccountComponent.js';
-import LoginMe from './Components/LoginComponent/LoginComponent.js';
+import Login from './Components/LoginComponent/LoginComponent.js';
 
 function App() {
   return (
+   <BrowserRouter>
    <>
-   <LoginMe/>
+   
    </>
+   <Routes>
+        {/* the forward slash is the landing page */}
+        <Route path='/' element={<Login />} />
+        {/* <Route path='/Login' element={<Login />} />
+        <Route path='/CreateAccount' element={<CreateAccount />} />
+        <Route path='/Dashboard' element={<Dashboard />} /> */}
+    </Routes>
+   
+   
+   </BrowserRouter>
   );
 }
 
