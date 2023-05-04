@@ -4,6 +4,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import HomeComponent from './Components/HomeComponent/HomeComponent.js';
 import LoginComponent from './Components/LoginComponent/LoginComponent.js'
 import CreateAccountComponent from './Components/CreateAccountComponent/CreateAccountComponent.js';
+import UserCompleted from './Components/UserCompleted/UserCompleted';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               <Route path="/" element={<HomeComponent />} />
               <Route path="Login" element={<LoginComponent/> } />
               <Route path="CreateAccount" element={<CreateAccountComponent/> } />
+              <Route path="UserCompleted" element={<UserCompleted />} />
         </Routes>
       </div>
     </BrowserRouter>

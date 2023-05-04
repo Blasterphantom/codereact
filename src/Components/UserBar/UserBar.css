@@ -1,0 +1,79 @@
+.userDiv{
+    width: 82%;
+    height: 242px;
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    border-radius: 14px;
+}
+
+.userRow.row{
+    display: flex;
+    justify-content: center;
+    margin-top: 83px;
+}
+
+.usernameRow.row{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.username{
+    color: white;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    font-size: 48px;
+}
+
+.kyu{
+    color: rgba(33, 150, 243, 1);
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 56px;
+    z-index: 1;
+    font-size: 32px;
+}
+
+.rect{
+    position: absolute;
+    width: 99px;
+    height: 11px;
+    left: 11.73%;
+    top: 172px;
+
+    background: #000000;
+}
+
+.greyTxt{
+    color: rgba(153, 153, 153, 1);
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.whiteTxt{
+    color: white;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.marginLeft.row{
+    margin: 0;
+    padding: 0;
+    margin-left: 39px !important;
+}
+
+.marginLeft2.row{
+    margin: 0;
+    padding: 0;
+    margin-left: -39px !important;
+}
+
+.userInfo1.row{
+    margin-top: 48px;
+}
