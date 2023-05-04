@@ -1,0 +1,67 @@
+.navContainer.container-fluid{
+    height: 222px;
+    background: linear-gradient(180deg, #222327 -15.32%, rgba(34, 35, 39, 0.817708) 39.89%, rgba(34, 35, 39, 0) 84.68%);
+    padding: 0;
+    max-width: 100%;
+}
+
+.navRowRow.row{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 28px;
+}
+
+.logoDiv{
+    padding: 0;
+    width: auto;
+    margin-left: 35px;
+}
+
+.logo{
+    width: 165px;
+    height: 91px;
+}
+
+.logoTxt{
+    margin: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -22px;
+
+}
+
+.logOut{
+    width: 16px;
+    height: 17px;
+    margin-right: 9px;
+}
+
+.logOutTxt{
+    margin: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.logOutDiv{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 35px;
+}

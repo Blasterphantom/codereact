@@ -7,7 +7,7 @@ export default function NavRow() {
   return (
     <Row className='navRow'>
         <div className='navDiv'>
-            <Row>
+            <Row className='txtRow'>
                 <h1 className='navText'>Kata</h1>
                 <h1 className='navText'>Completed</h1>
                 <h1 className='navText'>Unfinished</h1>

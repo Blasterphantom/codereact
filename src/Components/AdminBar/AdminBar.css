@@ -1,0 +1,18 @@
+.userRowAdmin.row{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.rectAdmin{
+    position: absolute;
+    width: 99px;
+    height: 11px;
+    left: 11.73%;
+    top: 222px;
+
+    background: #000000;
+}

@@ -3,15 +3,21 @@
     height: 242px;
     background: linear-gradient(180deg, #222327 0%, #16171B 100%);
     border-radius: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .userRow.row{
     display: flex;
     justify-content: center;
     margin-top: 83px;
+    margin-left: 0;
+    margin-right: 0;
+
 }
 
 .usernameRow.row{
+    margin: 0;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -41,7 +47,7 @@
     width: 99px;
     height: 11px;
     left: 11.73%;
-    top: 172px;
+    top: 345px;
 
     background: #000000;
 }
@@ -74,6 +80,11 @@
     margin-left: -39px !important;
 }
 
+.marginLeft3.row{
+    margin: 0;
+}
+
 .userInfo1.row{
+    margin: 0;
     margin-top: 48px;
 }

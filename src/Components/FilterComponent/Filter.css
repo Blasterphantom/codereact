@@ -86,5 +86,46 @@
 
 .dropDownBtn{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    padding-left: 18px;
+    justify-content: space-between;
+}
+
+.dropDownBtn:hover{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+}
+
+.dropDownBtn:active{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+}
+
+.dropdown-menu.show{
+    width: 100%;
+    background: #222327;
+}
+
+.dropTxt{
+    color: white;
+}
+
+.dropdown-toggle::after{
+
 }

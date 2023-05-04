@@ -1,5 +1,6 @@
 .completedContainer.container-fluid{
     background-color: black;
+    padding: 0;
 }
 
 .completedRow.row{
@@ -32,6 +33,7 @@
 .filterRow.row{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .width82{

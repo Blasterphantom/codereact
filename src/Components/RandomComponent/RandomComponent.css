@@ -1,0 +1,221 @@
+.randomRow.row{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center; 
+   margin-top: 74px;
+}
+
+.gradientDiv{
+    width: 82%;
+    height: 242px;
+    background: linear-gradient(90deg, #EB9514 0%, #1F87E7 100%);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.randomChallengeDiv{
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.randomKataDiv{
+    width: 69.7%;
+    height: 100%;
+    background: linear-gradient(180deg, #222327 0%, #16171B 100%);
+    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.randomTxt{
+    height: 54px;
+    width: 276px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.dropDownRowRandom.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.dropDownRowRandom2.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.dropDownRandom.dropdown{
+    padding: 0;
+    margin: 0;
+    width: 78.6%;
+}
+
+.dropDownBtnRandom{
+    width: 100%;
+    height: 43px;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    padding-left: 18px;
+    justify-content: space-between;
+}
+
+.dropDownBtnRandom:hover{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+}
+
+.dropDownBtnRandom:active{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+    border-radius: 4px;
+}
+
+.dropdown-menu.show{
+    width: 100%;
+    background: #222327;
+}
+
+.dropTxtRandom{
+    color: white;
+}
+
+.reserveKataBtn{
+    height: 43px;
+    width: 78.6%;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    background: #222327;
+    border: 1.3px solid #B8BBC2;
+}
+
+.reserveKataTxt{
+    margin: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.randomKataDivRow.row{
+    margin: 0;
+    padding: 0;
+}
+
+.randomKataDivRowTxt{
+    position: relative;
+    height: 22px;
+    z-index: 1;
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    margin-top: 21px;
+}
+
+.rect3{
+    position: absolute;
+    width: 99px;
+    height: 11px;
+    left: 508px;
+    top: 541px;
+
+    background: #000000;
+}
+
+.firstCol.col-2{
+    padding: 0;
+    width: 126px;
+}
+
+/* .secondCol.col{
+
+} */
+
+.secondColTxt{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 0;
+    height: 34px;
+}
+
+.secondColRow.row{
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.pfpPic{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.pfpTxt{
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
