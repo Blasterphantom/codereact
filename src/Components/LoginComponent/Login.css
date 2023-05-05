@@ -42,49 +42,92 @@ background: #222327;
 border-radius: 20px;
 }
 
+.newDiv {
 
-.brColor{
+  position: relative;
+  /* width:100%; */
+  height:9em;
+   justify-content: center;
+   left:  326px;
+}
+
+.newDiv2 {
+  /* position: relative;
+  left:  512px; */
+
+  font-size: medium;
+
+  position: relative;
+width: 418px;
+height: 29px;
+left: 422px;
+
+
+/* top: 1032px; */
+}
+
+.newRow { 
+
+  /* width: 560px; */
+  /* padding: 100px; */
+  /* justify-content: center; */
+  /* position: inherit; */
+
+  /* display:flex;
+  justify-content: center; */
+
+  position: absolute;
+width: 820px;
+/* height: 933px; */
+left: 317px;
+top: 235px;
+
+background: #222327;
+border-radius: 20px;
+}
+
+
+.newColor{
   background-color: #16171B;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+} 
+
+.paddingThree{
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
-.mLogo{
-  padding-left: 7px;
-}
-
-.moveCard{
+.paddingOne{
  padding-top: 7rem;
 }
 
-.cBody{
+.paddingTwo{
   padding-left: 30rem;
   padding-right: 30rem;
   padding-top: 3rem;
 }
 
-.cuzCard{
+.newCard{
   background-color: #222327;
   height: 30rem;
 }
 
-.listCuz{
+.listGroup{
   border-radius: 5px;
   border-color: #757575;
   background-color: #222327;
   color: white;
 }
 
-.cusLi{
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
 
-.signInButton{
+.newBtnbtn{
   background-color: #BB432C !important; 
   border-color: #BB432C !important;
   width: 15.5rem;
   height: 2rem;
   text-align: center;
 }
+
+
