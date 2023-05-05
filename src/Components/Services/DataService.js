@@ -107,4 +107,4 @@ async function SearchKata(slug){
     return data;
 }
 
-export { CodeWarsByChallenge, GetLoggedInUserData, login, SearchKata}
+export { CodeWarsByChallenge, SearchKata}
