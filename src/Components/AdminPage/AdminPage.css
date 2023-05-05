@@ -1,0 +1,6 @@
+.filterRow2.row{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: -35px;
+}

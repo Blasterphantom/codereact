@@ -50,6 +50,8 @@ export default function () {
                             <img className='pfpPic' src={pfp} />
                             <h4 className='pfpTxt'>AuthorOfThisKata</h4>
                         </Row>
+                        <h4 className='kataDescriptionTitle'>Kata Description</h4>
+                        <h4 className='kataDescriptionTxt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.</h4>
                     </Col>
                 </Row>
             </div>

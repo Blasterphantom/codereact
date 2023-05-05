@@ -5,6 +5,9 @@ import NavBarTop from '../NavBarTop/NavBarTop';
 import UserBar from '../UserBar/UserBar';
 import RandomComponent from '../RandomComponent/RandomComponent';
 import AdminBar from '../AdminBar/AdminBar';
+import FilterAdmin from '../FilterAdmin/FilterAdmin';
+import FooterComponent from '../FooterComponent/FooterComponent';
+import UserCard from '../UserCard/UserCard';
 
 
 export default function AdminPage() {
@@ -16,6 +19,15 @@ export default function AdminPage() {
         <AdminBar />
 
         <RandomComponent />
+
+        <Row className='filterRow2'>
+            <div className='width82'>
+                <FilterAdmin />
+                <UserCard />
+            </div>
+        </Row>
+
+        <FooterComponent />
 
 
     </Container>

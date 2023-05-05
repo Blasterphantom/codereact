@@ -5,6 +5,7 @@
    display: flex;
    justify-content: center; 
    margin-top: 74px;
+   margin-bottom: 65px;
 }
 
 .gradientDiv{
@@ -166,8 +167,8 @@
     position: absolute;
     width: 99px;
     height: 11px;
-    left: 508px;
-    top: 541px;
+    left: 506px;
+    top: 531px;
 
     background: #000000;
 }
@@ -218,4 +219,32 @@
     align-items: center;
 
     color: #FFFFFF;
+}
+
+.kataDescriptionTitle{
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.kataDescriptionTxt{
+    width: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    display: flex;
+    text-align: left;
 }

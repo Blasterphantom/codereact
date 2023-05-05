@@ -1,10 +1,12 @@
 import React from 'react'
-import '../UserCompleted/UserCompleted.css';
+import './UserCompleted.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import UserBar from '../UserBar/UserBar';
 import NavRow from '../NavRow/NavRow';
 import Filter from '../FilterComponent/Filter';
 import NavBarTop from '../NavBarTop/NavBarTop';
+import FooterComponent from '../FooterComponent/FooterComponent';
+import KataCard from '../KataCard/KataCard';
 
 export default function UserCompleted() {
   return (
@@ -23,8 +25,13 @@ export default function UserCompleted() {
         <Row className='filterRow'>
             <div className='width82'>
                 <Filter />
+                <KataCard />
             </div>
+
+
         </Row>
+
+        <FooterComponent />
 
     </Container>
   )

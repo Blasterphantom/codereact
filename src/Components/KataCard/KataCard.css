@@ -1,0 +1,156 @@
+.kataCard{
+    width: 64%;
+    height: 352px;
+    margin: 0;
+    padding: 0;
+    background: #222327;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.cardRow.row{
+    margin: 0;
+    padding: 0;
+}
+
+.cardCol.col-2{
+    padding: 0;
+    margin: 0;
+}
+
+.cardCol2.col-4{
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 28px;
+}
+
+.cardCol3.col-6{
+    padding: 0;
+    margin: 0;
+}
+
+.cardKyu{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #F0DB4F;
+    margin-top: 24px;
+    margin-left: 45px;
+}
+
+.cardTitle{
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+     
+}
+
+.authorRow.row{
+    margin: 0;
+    padding: 0;
+}
+
+.authorName{
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.reserveKataBtn2{
+    height: 43px;
+    width: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222327 !important;
+    border: 1.3px solid #B8BBC2;
+}
+
+.reserveKataBtn2:focus{
+    height: 43px;
+    width: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222327 !important;
+    border: 1.3px solid #B8BBC2;
+}
+
+.reserveKataBtn2:active{
+    height: 43px;
+    width: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222327 !important;
+    border: 1.3px solid #B8BBC2;
+}
+.cardRow2{
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    width: 640px;
+}
+
+.cardRow2Title.col{
+    margin: 0;
+    padding: 0;
+}
+
+.cardRow2TitleTxt{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.cardRow2Txt{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.card2Div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

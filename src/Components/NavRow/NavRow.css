@@ -6,6 +6,47 @@
     margin: 0;
     padding: 0;
     margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.navText:hover{
+    font-size: 32px;
+    font-weight: 400;
+    color: #3C3D3F;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+}
+
+.navText:focus{
+    background-color:rgba(0, 0, 0, 0) !important;
+    color: #3C3D3F;
+}
+
+.navText:active{
+    font-size: 32px;
+    font-weight: 400;
+    color: #3C3D3F;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+}
+
+.navText2{
+    font-size: 32px;
+    font-weight: 400;
+    color: #3C3D3F;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
 }
 
 .navRow.row{

@@ -1,0 +1,9 @@
+.filterAdminDiv{
+    box-sizing: border-box;
+
+    width: 34.4%;
+    height: 311px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+}

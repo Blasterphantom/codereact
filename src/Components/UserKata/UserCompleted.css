@@ -1,5 +1,5 @@
 .completedContainer.container-fluid{
-    background-color: black;
+    background: #16171B;
     padding: 0;
 }
 
@@ -40,4 +40,7 @@
     width: 82%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

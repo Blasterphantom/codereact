@@ -4,7 +4,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import HomeComponent from './Components/HomeComponent/HomeComponent.js';
 import LoginComponent from './Components/LoginComponent/LoginComponent.js'
 import CreateAccountComponent from './Components/CreateAccountComponent/CreateAccountComponent.js';
-import UserCompleted from './Components/UserCompleted/UserCompleted';
+import UserCompleted from './Components/UserKata/UserCompleted.js';
 import AdminPage from './Components/AdminPage/AdminPage';
 
 function App() {

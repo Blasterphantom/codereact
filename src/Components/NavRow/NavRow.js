@@ -8,10 +8,10 @@ export default function NavRow() {
     <Row className='navRow'>
         <div className='navDiv'>
             <Row className='txtRow'>
-                <h1 className='navText'>Kata</h1>
-                <h1 className='navText'>Completed</h1>
-                <h1 className='navText'>Unfinished</h1>
-                <h1 className='navText'>Authored</h1>
+                <Button className='navText'>Kata</Button>
+                <Button className='navText'>Completed</Button>
+                <Button className='navText'>Unfinished</Button>
+                <Button className='navText'>Authored</Button>
             </Row>
         </div>
     </Row>
