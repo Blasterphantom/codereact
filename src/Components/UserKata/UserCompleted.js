@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState, navigate } from 'react'; 
 import './UserCompleted.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import UserBar from '../UserBar/UserBar';
@@ -9,6 +10,18 @@ import FooterComponent from '../FooterComponent/FooterComponent';
 import KataCard from '../KataCard/KataCard';
 
 export default function UserCompleted() {
+  const [userInfo, setUserInfo] = useState({});
+
+//   useEffect(() => {
+//     if(JSON.parse(localStorage.getItem('userInfo')) === null) {
+//         setUserInfo({isAdmin: false});
+//         navigate('/LoginComponent');
+//     } else {
+//         setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
+//     }
+    
+// }, []);
+
   return (
     <Container fluid className='completedContainer'>
         {/* <Row className='completedRow'>
