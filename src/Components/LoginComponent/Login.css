@@ -43,45 +43,42 @@ border-radius: 20px;
 }
 
 
-.brColor{
+.newColor{
   background-color: #16171B;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+} 
+
+.paddingThree{
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
-.mLogo{
-  padding-left: 7px;
-}
-
-.moveCard{
+.paddingOne{
  padding-top: 7rem;
 }
 
-.cBody{
+.paddingTwo{
   padding-left: 30rem;
   padding-right: 30rem;
   padding-top: 3rem;
 }
 
-.cuzCard{
+.newCard{
   background-color: #222327;
   height: 30rem;
 }
 
-.listCuz{
+.listGroup{
   border-radius: 5px;
   border-color: #757575;
   background-color: #222327;
   color: white;
 }
 
-.cusLi{
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
 
-.signInButton{
+.newBtnbtn{
   background-color: #BB432C !important; 
   border-color: #BB432C !important;
   width: 15.5rem;
