@@ -5,8 +5,8 @@ let userData = {};
 
 export async function login(loginUser){
 
-    const res = await fetch('https://codewarsreservation.azurewebsites.net/User/AddUser', {
-        method: "no-cors",
+    const res = await fetch('https://codewarsreservation.azurewebsites.net/User/Login', {
+        method: "POST",
         headers: {
 
             'Content-Type': "application/json"
@@ -20,8 +20,9 @@ if(!res.ok){
     throw new Error (message);
 }
 
-let data = await res.json();
+const data = await res.json();
 console.log(data);
+return data;
 
 }
 

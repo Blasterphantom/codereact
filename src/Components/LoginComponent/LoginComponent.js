@@ -15,8 +15,8 @@ import "./Login.css";
 
 export default function Login() {
   let navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [Username, setUsername] = useState("");
+  const [Password, setPassword] = useState("");
 
   // Make function for button
   const handleSubmit = async () => {
@@ -24,14 +24,14 @@ export default function Login() {
     // first we'll make an object then console log it
     let userData = {
       // structuring an object(opposite of destructuring) only works when they have the same variable
-      username,
-      password,
+      Username,
+      Password
     };
     console.log(userData);
     let token = await login(userData);
     if (token.token != null) {
       localStorage.setItem("Token", token.token);
-      await GetLoggedInUserData(username);
+      await GetLoggedInUserData(Username);
       navigate("/UserCompleted");
     }
   };
@@ -67,13 +67,13 @@ export default function Login() {
                       <ListGroup className="paddingThree">
                         <Form.Control
                           className="listGroup"
-                          type="email"
+                          type="text"
                           placeholder="Username"
                           onChange={({target: {value}}) => setUsername(value)}
                         />
                         <Form.Control
                           className="listGroup"
-                          type="email"
+                          type="password"
                           placeholder="password"
                           onChange={({target : {value}}) => setPassword(value)}
                         />
