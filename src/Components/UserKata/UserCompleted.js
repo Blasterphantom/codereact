@@ -19,15 +19,15 @@ export default function UserCompleted() {
 
   let navigate = useNavigate();
 
-  useEffect(() => {
-    if(JSON.parse(localStorage.getItem('userInfo')) === null) {
-        setUserInfo({isAdmin: false});
-        navigate('/Login');
-    } else {
-        setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
-    }
+  // useEffect(() => {
+  //   if(JSON.parse(localStorage.getItem('userInfo')) === null) {
+  //       setUserInfo({isAdmin: false});
+  //       navigate('/Login');
+  //   } else {
+  //       setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
+  //   }
     
-  }, []);
+  // }, []);
 
   useEffect(() => {
     data = GetCodewarUserInfo();
