@@ -6,6 +6,7 @@ import {
   Form,
   Row
 } from 'react-bootstrap'
+import { useNavigate } from "react-router-dom";
 import './Create.css'
 import CRALogo from '../Assets/CodewarsLOGO.png'
 import { Person } from '@mui/icons-material'
@@ -18,6 +19,10 @@ import {
 
 
 export default function CreateAccountComponent() {
+
+  let navigate = useNavigate();
+
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -44,7 +49,15 @@ export default function CreateAccountComponent() {
     };
 
     console.log(userData);
+    navigate("/DashBoard");
   };
+
+//   useEffect(() => {
+//     if (isCreated) {
+//         LoginInfo();
+//         navigate("/");
+//     }
+// }, [isCreated]);
 
 
   return (

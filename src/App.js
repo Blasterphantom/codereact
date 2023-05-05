@@ -10,16 +10,20 @@ import AdminPage from './Components/AdminPage/AdminPage';
 
 function App() {
   return (
+
+
+
     <BrowserRouter>
       <div id='startPage' className='App'>
         <Routes>
-              <Route path="/" element={<UserCompleted />} />
-              <Route path="Login" element={<LoginComponent/> } />
-              <Route path="CreateAccount" element={<CreateAccountComponent/> } />
-              <Route path="AdminPage" element={<AdminPage />} />
+             <Route path="/" element={<Login/> } />
+              <Route path="/DashBoard" element={<UserCompleted />} />
+              <Route path="/CreateAccountComponent" element={<CreateAccountComponent/> } />
+              <Route path="/AdminPage" element={<AdminPage />} /> 
         </Routes>
       </div>
     </BrowserRouter>
+
   );
 }
 
