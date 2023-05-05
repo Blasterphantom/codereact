@@ -38,7 +38,7 @@ export default function UserCompleted() {
         <Row className='filterRow'>
             <div className='width82'>
                 <Filter />
-                <KataCard />
+                <KataCard/>
             </div>
 
 

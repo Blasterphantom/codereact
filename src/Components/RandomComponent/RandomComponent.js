@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import '../RandomComponent/RandomComponent.css';
 import { Container, Row, Col, Dropdown, Button } from 'react-bootstrap';
 import pfp from '../../Assets/Pfp.png';
+import UserContext from '../../UserContext/UserContext';
 
 export default function () {
+    const [search, setSearch] = useState('');
+const data = useContext(UserContext);
+
+
+
   return (
     <Row className='randomRow'>
         <div className='gradientDiv'>
