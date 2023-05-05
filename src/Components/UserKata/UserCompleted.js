@@ -9,9 +9,13 @@ import Filter from '../FilterComponent/Filter';
 import NavBarTop from '../NavBarTop/NavBarTop';
 import FooterComponent from '../FooterComponent/FooterComponent';
 import KataCard from '../KataCard/KataCard';
+import { GetCodewarUserInfo } from '../Services/DataService';
 
 export default function UserCompleted() {
+
   const [userInfo, setUserInfo] = useState({});
+
+  let data;
 
   let navigate = useNavigate();
 
@@ -23,6 +27,10 @@ export default function UserCompleted() {
         setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
     }
     
+  }, []);
+
+  useEffect(() => {
+    data = GetCodewarUserInfo();
   }, []);
 
   return (
@@ -42,6 +50,8 @@ export default function UserCompleted() {
 
 
         </Row>
+
+        {/* Marcel was here and crying */}
 
         <FooterComponent />
 
