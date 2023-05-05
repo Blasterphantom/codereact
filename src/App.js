@@ -10,11 +10,15 @@ function App() {
   return (
    <BrowserRouter>
    <>
-   
+   <Login/ >
    </>
    <Routes>
         {/* the forward slash is the landing page */}
+
+
         <Route path='/' element={<Login />} />
+
+        
         {/* <Route path='/Login' element={<Login />} />
         <Route path='/CreateAccount' element={<CreateAccount />} />
         <Route path='/Dashboard' element={<Dashboard />} /> */}
