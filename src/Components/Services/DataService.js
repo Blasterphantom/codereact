@@ -25,7 +25,7 @@ console.log(data);
 }
 
 async function GetLoggedInUserData(userName){
-    let res = await fetch (`https://codewarsreservation.azurewebsites.net/User/userbyusername/${userName}`)
+    let res = await fetch (`https://codewarsreservation.azurewebsites.net/User/GetUserInfo/${userName}`)
     let data = await res.json();
     userData = data;
     console.log(userData);

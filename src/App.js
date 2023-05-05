@@ -13,10 +13,10 @@ function App() {
     <BrowserRouter>
       <div id='startPage' className='App'>
         <Routes>
-              <Route path="/" element={<UserCompleted />} />
-              <Route path="Login" element={<LoginComponent/> } />
-              <Route path="CreateAccount" element={<CreateAccountComponent/> } />
-              <Route path="AdminPage" element={<AdminPage />} />
+              <Route path="/" element={<LoginComponent/> } />
+              <Route path="/UserCompleted" element={<UserCompleted />} />
+              {/* <Route path="CreateAccount" element={<CreateAccountComponent/> } />
+              <Route path="AdminPage" element={<AdminPage />} /> */}
         </Routes>
       </div>
     </BrowserRouter>

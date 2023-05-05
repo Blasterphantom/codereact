@@ -32,7 +32,7 @@ export default function Login() {
     if (token.token != null) {
       localStorage.setItem("Token", token.token);
       await GetLoggedInUserData(username);
-      navigate("/");
+      navigate("/UserCompleted");
     }
   };
 
@@ -68,12 +68,14 @@ export default function Login() {
                         <Form.Control
                           className="listGroup"
                           type="email"
-                          placeholder="Codewars Login"
+                          placeholder="Username"
+                          onChange={({target: {value}}) => setUsername(value)}
                         />
                         <Form.Control
                           className="listGroup"
                           type="email"
                           placeholder="password"
+                          onChange={({target : {value}}) => setPassword(value)}
                         />
                        
                       </ListGroup>
@@ -84,7 +86,7 @@ export default function Login() {
                 <Row>
                   <Col>
                     <div className="d-flex justify-content-center pt-4">
-                      <Button className="newBtnbtn">Sign In</Button>
+                      <Button onClick={handleSubmit} className="newBtnbtn">Sign In</Button>
                     </div>
                   </Col>
                 </Row>
