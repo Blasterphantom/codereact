@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Container, Row, Form, Button } from 'react-bootstrap';
+import { Col, Container, Row, Form, Button, Card, ListGroup } from 'react-bootstrap';
 import { login, GetLoggedInUserData } from '../Services/DataService';
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
@@ -30,47 +30,63 @@ export default function Login() {
     }
     
     return (
-        <div>
-            <Container>
-                <Row className='newRow'>
-                    <Col className='mt-5' style={{backgroundColor: 'Black',}}>
-                        <h1 style={{ color: 'white'}} className='d-flex justify-content-center mb-4'>CodeReserve</h1>
-                        <div className='newDiv'> 
 
-                        <Form style={{ position: 'relative',width: ' 100% ' , height: ' 10em' }}>
-                            <Form.Group  controlId="Username">
-                                {/* <Form.Label>Username</Form.Label> */}
-                                <Form.Control
-                                style={{ width : '220px', marginBottom: '0px',}}
-                                type="text"
-                                placeholder="Enter username"
-                                // Desconstructed object
-                                onChange={({target: {value}}) => setUsername(value)} />
-                            </Form.Group>
+        <>
+        <div className="brColor">
 
-                            <Form.Group className="mb-3" controlId="Password">
-                                {/* <Form.Label>Password</Form.Label> */}
-                                <Form.Control
-                                style={{ width:' 222px', paddingTop: '4px'}}
-                                type="password"
-                                placeholder="Password"
-                                // Deconstructed object
-                                onChange={({target : {value}}) => setPassword(value)} />
-                            </Form.Group>
+        <Row className='moveCard'>
+            <Col className='cBody'>
+                <Card className='cuzCard'>
+                    <Card.Body>
+                        <Row>
+                            <Col className='d-flex justify-content-center align-items-start pt-3'>
+                                <div>
+                                    {/* <img src={CodeReserve} height='auto' width='165px' alt='ReserveLogo' /> */}
+                                </div>
+                            </Col>
+                        </Row>
 
-                            <Button
-                                style= {{ marginTop: '25px', width: '228px', marginRight: '5rem',}}
-                                variant="danger"
-                                onClick={handleSubmit}>
-                                Sign In
-                            </Button>
-                        </Form>
-                                    </div>
-                        <h4 className='newDiv2 mt-4'><span>Signup</span> if you don't have an account yet</h4>
-                        {/* <Button onClick={() => navigate('/')}>Create Account</Button> */}
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+                        <Row>
+                            <Col>
+                                <div>
+                                    <p className=' align-self-start text-white text-center fs-2'>CodeReserve</p>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <div>
+                                    <ListGroup className='cusLi'>
+                                        <Form.Control  className='listCuz' type="email" placeholder="Codewars Login"/>
+                                        <Form.Control  className='listCuz' type="email" placeholder="password"/>
+                                        <Form.Control  className='listCuz' type="email" placeholder="Confirm Password"/>
+                                    </ListGroup>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <div className='d-flex justify-content-center pt-4'>
+                                    <Button className='signInButton'>Sign In</Button>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                            <div>
+                            <p className='text-white text-center pt-5'> <u>Log in </u> <span>if you don't have an account already </span> </p>
+                            </div>
+                            </Col>
+                        </Row>
+
+                    </Card.Body>
+                </Card>
+            </Col>
+        </Row>
+    </div>
+</>
     )
 }
