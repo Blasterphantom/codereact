@@ -1,5 +1,6 @@
 import React from 'react'
-import { useEffect, useState, navigate } from 'react'; 
+import { useEffect, useState } from 'react'; 
+import { useNavigate } from 'react-router-dom';
 import './UserCompleted.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import UserBar from '../UserBar/UserBar';
@@ -12,22 +13,20 @@ import KataCard from '../KataCard/KataCard';
 export default function UserCompleted() {
   const [userInfo, setUserInfo] = useState({});
 
-//   useEffect(() => {
-//     if(JSON.parse(localStorage.getItem('userInfo')) === null) {
-//         setUserInfo({isAdmin: false});
-//         navigate('/LoginComponent');
-//     } else {
-//         setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
-//     }
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    if(JSON.parse(localStorage.getItem('userInfo')) === null) {
+        setUserInfo({isAdmin: false});
+        navigate('/Login');
+    } else {
+        setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
+    }
     
-// }, []);
+  }, []);
 
   return (
     <Container fluid className='completedContainer'>
-        {/* <Row className='completedRow'>
-            <Button className='logOutBtn'/>
-            <h4 className='logOutTxt'>Logout</h4>
-        </Row> */}
 
         <NavBarTop />
 
