@@ -3,25 +3,21 @@ let userData = {};
 
 
 
-export async function login(loginUser){
-
-    const res = await fetch('https://codewarsreservation.azurewebsites.net/User/AddUser', {
-        method: "no-cors",
-        headers: {
-
-            'Content-Type': "application/json"
-            },
-        body: JSON.stringify(loginUser)
-});
-if(!res.ok){
-
-
-    const message = `An Erros has Occured ${res.status}`;
-    throw new Error (message);
-}
-
-let data = await res.json();
-
+export async function login(loginUser) {
+    const res = await fetch('https://codewarsreservation.azurewebsites.net/User/Login',{
+        method:"POST",
+        headers:{
+            'Content-Type':"application/json"
+        },
+        body:JSON.stringify(loginUser)
+    });
+    if(!res.ok){
+        const message = `An Error has Occured  ${res.status}`;
+        throw new Error(message);
+    }
+    const data = await res.json();
+    //We are not writeing a return because this is a POST.
+    return data;
 }
 
 export async function GetLoggedInUserData(userName){
