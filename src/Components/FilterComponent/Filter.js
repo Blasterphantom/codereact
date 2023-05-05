@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import '../FilterComponent/Filter.css';
 import { Container, Row, Col, Button, Dropdown } from 'react-bootstrap';
+import UserContext from '../../UserContext/UserContext';
+import { SearchKata } from '../Services/DataService';
 
 export default function Filter() {
+    const [search, setSearch] = useState('');
+    const data = useContext(UserContext);
+
+    const handleSearch = async () => {
+        const searchName = await SearchKata(search);
+        data.setSearchKata(searchName);
+      }
+
   return (
     <div className='filterDiv'>
         <Col className='colFilter'>
@@ -12,8 +22,8 @@ export default function Filter() {
             </div>
             
             <Row className='searchRow'>
-                <input className='search' />
-                <button className='magnify' />
+                <input className='search' onChange={({ target: { value } }) =>  setSearch(value)}/>
+                <button className='magnify'onClick={handleSearch} />
             </Row>
 
             <div className='filterTxtDiv'>
