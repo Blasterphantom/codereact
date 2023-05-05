@@ -60,7 +60,7 @@ export default function Login() {
                                     <ListGroup className='cusLi'>
                                         <Form.Control  className='listCuz' type="email" placeholder="Codewars Login"/>
                                         <Form.Control  className='listCuz' type="email" placeholder="password"/>
-                                        <Form.Control  className='listCuz' type="email" placeholder="Confirm Password"/>
+                                        {/* <Form.Control  className='listCuz' type="email" placeholder="Confirm Password"/> */}
                                     </ListGroup>
                                 </div>
                             </Col>
